@@ -6,3 +6,6 @@ brain-games: # запуск проекта
 
 publish: 
 	npm publish --dry-run
+
+lint:
+	npx eslint .
