@@ -11,7 +11,7 @@ const getGameData = () => {
 
   const answer = gcd(first, second);
 
-  return [`${first} and ${second}`, String(answer)];
+  return [`${first} ${second}`, String(answer)];
 };
 
 const gcdGame = () => runGame(DESCRIPTION, getGameData);
