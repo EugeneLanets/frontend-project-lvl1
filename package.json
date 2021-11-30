@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/brain-games.js"
+    "start": "node bin/brain-games.js",
+    "publ": "npm publish --dry-run && npm link"
   },
   "type": "module",
   "repository": {
