@@ -16,7 +16,7 @@ const runGame = (description, getGameData) => {
 
     const userAnswer = getAnswer('Your answer: ');
     if (userAnswer !== answer) {
-      console.log(`'${userAnswer}' is wrong answer. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }
 
