@@ -5,7 +5,7 @@ const ROUNDS_COUNT = 3;
 const runGame = (description, getGameData) => {
   console.log('Welcome to the Brain Games!');
   const userName = getAnswer('May I have your name? ');
-  console.log('Hello,', userName);
+  console.log(`Hello, ${userName}!`);
 
   console.log(description);
 
@@ -16,14 +16,14 @@ const runGame = (description, getGameData) => {
 
     const userAnswer = getAnswer('Your answer: ');
     if (userAnswer !== answer) {
-      console.log(`"${userAnswer}" is wrong answer. Correct answer was "${answer}". You lose!`);
+      console.log(`'${userAnswer}' is wrong answer. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }
 
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${userName}! You win!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;
