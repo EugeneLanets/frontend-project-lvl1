@@ -20,7 +20,7 @@ const OPERATIONS = [
   },
 ];
 
-const DESCRIPTIONS = 'What is the result of the expression?';
+const DESCRIPTION = 'What is the result of the expression?';
 
 const getGameData = () => {
   const first = getRandomNumber(1, 99);
@@ -32,6 +32,6 @@ const getGameData = () => {
   return [`${first} ${operation.sign} ${second}`, String(answer)];
 };
 
-const calcGame = () => runGame(DESCRIPTIONS, getGameData);
+const calcGame = () => runGame(DESCRIPTION, getGameData);
 
 export default calcGame;
